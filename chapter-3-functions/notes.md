@@ -1,4 +1,4 @@
-###Functions
+### Functions
 
 Functions are the bread and butter of JavaScript :)
 
@@ -40,7 +40,7 @@ const square = functions(x) {
 console.log(square(12)); // 144
 ```
 
-####Binding and Scopes
+#### Binding and Scopes
 
 If you create bindings with let and const inside of a loop,
 the code before and after the loop can not see it.
@@ -76,7 +76,7 @@ console.log(n); // 10
 Each local scope can also see all he local scopes that contain it, and all scopes can see the global scope.
 This aproach called *lexical scoping*.
 
-####Functions as Values
+#### Functions as Values
 
 A function value can do all things that other values can do. It is possible to store a function value in a new binding, pass it an argument to a function and so on.
 
@@ -90,7 +90,7 @@ if (safeMode) {
     }
 }
 ```
-####Declaration Notation
+#### Declaration Notation
 
 There is slightly shorter way to create a function binding, when the *function* keyword is used
 at the start of a statement it works differently. It's slightly easier to write and does not require 
@@ -102,7 +102,7 @@ function future() {
 }
 ```
 
-###Arrow Function
+### Arrow Function
 
 Instead of the function keyword, it use an arrow (=>) made up of an equal sign and a greater than symbol.
 
@@ -123,7 +123,7 @@ const square1 = (x) => { return x * x; }
 const square2 = x => x * x;
 ```
 
-####Optional Arguments
+#### Optional Arguments
 
 JavaScript is extremely broad-minded about the number of arguments you pass to a function. 
 If you pass too mnay, the extra ones are ignored.If you pass too few, missing parameters get assigned the value *undefined* or you can provide a default value.
@@ -141,7 +141,7 @@ console.log(power(4)); // 16
 console.log(power(2, 6)); // 64
 ```
 
-####Closure
+#### Closure
 
 Local bindings are created anew for every call, and different calls can not trample on one another's
 local bindings. This feature is called *closure*.
@@ -161,5 +161,5 @@ console.log(wrap2()); // 2
 
 This behavioer not only frees from having to worry about litefimes of bindings but also makes it possible to use function values in some creative ways.
 
-####Recursion
+ 
 
